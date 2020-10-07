@@ -1,6 +1,7 @@
 const express = require("express");
 const path = require("path");
 const mongoose = require("mongoose");
+const booksController = require("./controllers/booksController");
 
 const PORT = process.env.PORT || 3001;
 const app = express();
@@ -16,7 +17,7 @@ if (process.env.NODE_ENV === "production") {
 
 // Connect to the Mongo DB
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/reactrecipes",
+  process.env.MONGODB_URI || "mongodb://localhost/reactgooglebooks",
   { useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true }
 );
 
@@ -25,9 +26,10 @@ app.use("/api", apiRoutes);
 
 // Send every request to the React app
 // Define any API routes before this runs
-app.get("*", function(req, res) {
-  res.sendFile(path.join(__dirname, "./client/build/index.html"));
-});
+
+// app.get("*", function(req, res) {
+//   res.sendFile(path.join(__dirname, "./client/build/index.html"));
+// });
 
 app.listen(PORT, function() {
   console.log(`🌎 ==> API server now on port ${PORT}!`);
