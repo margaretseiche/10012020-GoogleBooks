@@ -1,6 +1,9 @@
 {
   "name": "mern",
   "version": "1.0.0",
+  "engines": {
+    "node": "12.x"
+  },
   "description": "MERN app for Google Book Search",
   "main": "server.js",
   "scripts": {
@@ -14,7 +17,7 @@
     "seed": "node scripts/seedDB.js"
   },
   "repository": {
-    "url": "https://github.com/margaretseiche/10052020-GoogleBooks-MERN"
+    "url": "https://github.com/margaretseiche/10012020-GoogleBooks"
   },
   "author": "",
   "license": "ISC",
