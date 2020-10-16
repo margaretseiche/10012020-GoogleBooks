@@ -7,7 +7,7 @@
 * Deployed on Heroku at https://secret-sands-57475.herokuapp.com/
 * Search Google Books API and save favorites in a database
 
-![Snapshot of Local Version](/public/Screenshot.JPG)
+![Snapshot of Local Version](/client/public/Screenshot.JPG)
 
 ## Table of Contents
 * [Description](#Description)
