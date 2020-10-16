@@ -6,18 +6,12 @@ const style = {
   color: "#008ae6"
 }
 
-// Exporting both RecipeList and RecipeListItem from this file
-
-// RecipeList renders a bootstrap list item
-
-// export function RecipeList({ children }) {
+// BookList renders a bootstrap list item
 export function BookList({ children }) {
   return <ul className="list-group">{children}</ul>;
 }
 
-// RecipeListItem renders a bootstrap list item containing data from the recipe api call
-
-// export function RecipeListItem({
+// BookListItem renders a bootstrap list item containing data from the recipe api call
 export function BookListItem({
   title,
   authors,

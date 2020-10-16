@@ -7,6 +7,10 @@ nav.nav-tabs {
   float: left;
 }
 
+.active {
+  background-color: #d5ddfd;
+}
+
 a.nav-link {
   color: white;
 }

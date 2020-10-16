@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 import Jumbotron from "../../components/Jumbotron";
 import Nav from "../../components/Nav";
 import Input from "../../components/Input";
@@ -13,11 +14,12 @@ function Home() {
 
   const [books, setBooks] = useState([]);
   const [bookSearch, setBookSearch] = useState("");
+  const [results, setResults] = useState([]);
 
   const handleInputChange = event => {
     // Destructure the name and value properties off of event.target
     // Update the appropriate state
-    const { value } = event.target;
+    const {value} = event.target;
     setBookSearch(value);
   };
 
